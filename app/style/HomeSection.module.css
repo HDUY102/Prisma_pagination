@@ -1,0 +1,47 @@
+.section{
+    padding: 1rem 9;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background: url('/img4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 50rem;
+}
+
+.content h3{
+    color: #3e27d1;
+    font-size: 6rem;
+}
+
+.content span{
+    color: rgb(222, 61, 43);
+    font-size: 3.5rem;
+}
+.content p{
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: justify;
+}
+
+.shopnow{
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(70, 68, 68);
+    padding: 4px;
+    margin-top: 20px;
+    max-width: 12rem;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    font-size: 1.75rem;
+}
+
+.shopnow:hover{
+    color: black;
+    background-color: rgb(137, 239, 246);
+}

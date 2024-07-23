@@ -1,0 +1,80 @@
+/* Review */
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    background-color: rgba(255,51,153,.1);
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.heading span{
+    color: var(--pink);
+}
+
+.carousel{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.box_review{
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 60rem;
+    height: 45rem;
+}
+
+.box_review:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.box_review img{
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 79%;
+    object-fit: cover;
+}
+
+.box_review h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.box_review h4{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.btn{
+    position: absolute;
+    display: flex;
+    background-color: #fff7;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.btn_prev{
+    left: 2.5rem;
+}
+
+.btn_prev:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.btn_next{
+    right: 2.5rem;
+}
+
+.btn_next:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+

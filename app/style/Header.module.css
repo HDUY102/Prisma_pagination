@@ -1,0 +1,75 @@
+.header{
+    position: fixed;
+    top:0; left: 0;right: 0;
+    background: #fff;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin: auto;
+    padding-bottom: 24px;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--pink);
+    font-weight: bolder;
+}
+.logo span {
+    font-size: 2.5rem;
+    color: rgb(50, 198, 50)
+}
+
+.navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+.navbar a:hover{
+    color: var(--pink)
+}
+.icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    display: inline-block;
+}
+.icons a:hover{
+    color: var(--pink)
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 2rem ;
+    }
+}
+@media (min-width: 700px){
+    .toggle{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .toggle{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+    .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+    .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
