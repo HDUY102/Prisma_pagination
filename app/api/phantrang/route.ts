@@ -18,7 +18,7 @@ export async function GET(req:NextRequest){
     const totalPages = Math.ceil(totalRecordFlowers / limit)
 
     const flowers = await prisma.flowers.findMany({   
-        take: 12,
+        take: limit,
         skip: currentPage,
         where: {
             name: {contains: keyWord}
