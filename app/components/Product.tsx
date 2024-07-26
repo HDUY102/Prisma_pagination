@@ -3,18 +3,23 @@ import React, { useEffect, useState } from "react";
 import style from "@/app/style/Product.module.css";
 import { FaHeart, FaShare } from "react-icons/fa";
 import PaginationPage from "./pagination/Pagination";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const Product = () => {
     const [flowers, setFlowers] = useState([])
+    const searchParams = useSearchParams()
+    const router = useRouter()
+    const currentPage = searchParams.get('currentPage')
+    const limit = searchParams.get('limit')
+
     useEffect(() =>{
         const fetchFlowers = async () => {
             try {
-                const response = await fetch("/api/phantrang", {
+                const response = await fetch(`/api/phantrang?currentPage=${currentPage}`, {
                     method: "GET"
                 });
                 if (response.ok) {
                     const data = await response.json();
-                    console.log("data.meta: ",data.meta.flowers)
                     setFlowers(data.data.flowers);
                 } else {
                     console.error("Failed to fetch flowers");
@@ -24,8 +29,14 @@ const Product = () => {
             }
         }
         fetchFlowers()
-    },[])
-    console.log("flowers: ",flowers)
+    },[currentPage])
+
+    const handlePageChange = (page:number) =>{
+        router.push(`?currentPage=${page}`, {scroll:false})
+        const productElement = document.getElementById("product")
+        productElement?.scrollIntoView({behavior:"smooth"})
+    }
+
     return (
         <section id="product" className={style.product}>
             <h2>Product</h2>
@@ -62,7 +73,7 @@ const Product = () => {
                 </div>
                 ))}
             </div>
-            <PaginationPage />
+            <PaginationPage onPageChange={handlePageChange}/>
         </section>
     );
 };
