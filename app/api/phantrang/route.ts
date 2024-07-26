@@ -3,14 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 
 export async function GET(req:NextRequest){
-    // const url = req.nextUrl.searchParams
-    // const limit = 10
-    // const page = 1
-    // const sortOrder = 'asc'
-    // const keyWord = ''
-    // const limit:number = Number(req.nextUrl.searchParams.get('limit')) || 10
+
     const searchParams = req.nextUrl.searchParams
-    const limit:number = Number(searchParams.get('limit')) || 10
+    // const limit:number = Number(searchParams.get('limit')) || 12
+    const limit = 12
     const currentPage:number = Number(searchParams.get('currentPage')) || 1
     const sortOrder:any = searchParams.get('sortOrder') || 'asc'
     const keyWord:string = searchParams.get('keyWord') || ''
