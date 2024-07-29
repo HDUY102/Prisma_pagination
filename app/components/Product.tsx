@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import style from "@/app/style/Product.module.css";
+import style from "@/app/components/style/Product.module.css";
 import { FaHeart, FaShare } from "react-icons/fa";
 import PaginationPage from "./pagination/Pagination";
 import { useRouter, useSearchParams } from "next/navigation";
