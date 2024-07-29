@@ -1,0 +1,119 @@
+/* admin page */
+.container {
+  display: flex;
+}
+
+.menu {
+  background-color: #1a1a2b;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  transition: flex 0.3s ease;
+}
+
+/* sidebar */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logoText {
+  color: var(--pink);
+  font-weight: bolder;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+}
+
+.logoText span {
+  font-size: 2.5rem;
+  color: rgb(50, 198, 50);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logoImage {
+  width: 5rem;
+  border-radius: 5rem;
+}
+
+.icon {
+  color: #d7d6d6;
+  cursor: pointer;
+  margin-left: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 0 2.5rem;
+}
+
+.menuItems a {
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 5rem;
+}
+
+.menuItems a:hover {
+  color: var(--pink);
+}
+
+.active {
+  background-color: rgb(237, 235, 235);
+  color: var(--pink) !important;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menuItemsClosed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menuItemsClosed a {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.menuItemsClosed a:hover {
+  border-bottom: 1px solid #3fff3f;
+  color: var(--pink);
+}
+
+/* Card */
+.cardBoxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.cardBox {
+  border: 1px solid #333;
+  border-radius: 0.6rem;
+  padding: 4rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.cardBox:hover {
+  transform: scale(1.05);
+}
