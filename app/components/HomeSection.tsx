@@ -4,18 +4,6 @@ import style from "@/app/style/HomeSection.module.css";
 
 const HomeSection = () => {
   return (
-    // <Carousel activeIndex={index} onSelect={handleSelect}>
-    //   {bootstrap.map((item) => (
-    //     <Carousel.Item key={item.id} className={style.section} interval={4000}>
-    //       <img src={item.imageUrl} alt="slides" />
-    //       <Carousel.Caption className={style.content}>
-    //         <h3>{item.title}</h3>
-    //         <p>{item.body}</p>
-    //         <button className="btn btn-danger">Visit Docs</button>
-    //       </Carousel.Caption>
-    //     </Carousel.Item>
-    //   ))}
-    // </Carousel>
     <section id="home" className={style.section}>
         <div className={style.content}>
             <h3>Fresh Flowers</h3>
@@ -28,7 +16,7 @@ const HomeSection = () => {
                 quaerat qui iste aliquid.
             </p>
             <div className={style.shopnow}>
-              <a href='#'>shop now</a>
+              <a href='#product'>shop now</a>
             </div>
         </div>
     </section>
