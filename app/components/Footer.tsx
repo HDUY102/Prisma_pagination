@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "@/app/style/Footer.module.css";
+import style from "@/app/components/style/Footer.module.css";
 import { FiChevronRight,FiPhone,FiMail,FiMapPin,FiFacebook,FiInstagram,FiTwitter,FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
