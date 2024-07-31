@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import { FaCartShopping, FaHeart, FaCircleUser } from "react-icons/fa6";
-import style from "@/app/style/Header.module.css";
+import style from "@/app/components/style/Header.module.css";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
