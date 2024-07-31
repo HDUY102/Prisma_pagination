@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import style from "@/app/style/Review.module.css"
+import style from "@/app/components/style/Review.module.css"
 const reviews =[
   { img: "/img1.jpg", name: "John Smith", status: "Happy" },
   { img: "/img2.jpg", name: "Smith", status: "Happy" },
