@@ -1,6 +1,6 @@
 import React from 'react'
 import { GrCreditCard,GrCurrency,GrGift,GrDeliver  } from "react-icons/gr";
-import style from "@/app/style/About.module.css";
+import style from "@/app/components/style/About.module.css";
 
 const Icons = () => {
   return (
