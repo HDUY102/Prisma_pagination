@@ -1,0 +1,72 @@
+.loginContainer {
+  display: flex;
+}
+
+/* welcome login */
+.welcomeLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(180deg, #084a9d, #2092f4),
+    linear-gradient(90deg, #2092f4, #084a9d);
+}
+
+.welcomeLogin h1 {
+  font-size: 5rem;
+}
+
+.welcomeLogin img {
+  height: 10rem;
+  width: 10rem;
+  margin: 3rem;
+  border-radius: 50%;
+}
+
+.welcomeLogin h5 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* icon lock */
+.lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  color: #2092f4;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  top:44%;
+  left: 57.4%;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+/* form login */
+.formLogin {
+  width: 40%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeLogin {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.closeLogin:hover {
+  color: red;
+}
