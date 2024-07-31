@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import style from "@/app/style/HomeSection.module.css";
+import style from "@/app/components/style/HomeSection.module.css";
 
 const HomeSection = () => {
   return (
