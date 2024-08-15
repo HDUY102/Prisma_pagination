@@ -57,7 +57,7 @@ const RegisterPage = () => {
       })
     }) 
     if(respone.ok){
-      alert("Success")
+      alert("Success!")
       router.push("/login")
     }
     else {
