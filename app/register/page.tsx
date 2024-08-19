@@ -94,9 +94,9 @@ const RegisterPage = () => {
                     Username
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder="Username" {...field}/>
+                    <Input placeholder="username" {...field}/>
                   </FormControl>
-                  <FormMessage className="text-red-500 text-xl text-xl"/>
+                  <FormMessage className="text-red-500 text-xl"/>
                 </FormItem>
               )}
             />
@@ -126,7 +126,7 @@ const RegisterPage = () => {
                   <FormControl>
                     <PasswordInput
                       {...field}
-                      placeholder="Password"
+                      placeholder="password"
                     />
                   </FormControl>
                   <FormMessage className="text-red-500 text-xl" />
@@ -146,6 +146,12 @@ const RegisterPage = () => {
         <Link href="/" className={style.closeLogin}>
           <button>X</button>
         </Link>
+        <p className={style.changePage}>
+          Bạn chưa có tài khoản?{" "}
+          <a className="hover:text-blue-600 hover:underline" href={"/login"}>
+            <u>Đăng Nhập</u>
+          </a>
+        </p>
       </div>
     </div>
   );
