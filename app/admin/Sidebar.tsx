@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import style from "./Admin.module.css";
 import { FaBars , FaHome, FaTimes, FaTools,FaGift,FaChartBar, FaSignOutAlt    } from "react-icons/fa";
 import clsx from 'clsx';
+import { logout } from "../logout/page";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,7 @@ const Sidebar = () => {
                     className={clsx({ [style.active]: isActive === 'statistics' })}><FaChartBar className='mr-2'/> Thống kê</a>
                 <a href="#" onClick={() => handleActive('settings')}
                     className={clsx({ [style.active]: isActive === 'settings' })}><FaTools className='mr-2'/> Cài đặt</a>
-                <a href="/login" ><FaSignOutAlt className='mr-2'/> Đăng xuất</a>
+                <a href="/login" onClick={logout}><FaSignOutAlt className='mr-2'/> Đăng xuất</a>
             </div>
         ):(
             <div className={style.menuItemsClosed}>
@@ -50,7 +51,7 @@ const Sidebar = () => {
                 <a href="/admin" ><FaGift/></a>
                 <a href="/admin" ><FaChartBar/></a>
                 <a href="/admin" ><FaTools/></a>
-                <a href="/login" ><FaSignOutAlt/></a>
+                <a href="/login" onClick={logout} ><FaSignOutAlt/></a>
           </div>
         )}
         {/* {isOpen ?} */}
