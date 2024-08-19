@@ -13,3 +13,11 @@ model flowers {
   oldPrice Int
   price    Int
 }
+
+model users {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  email    String
+  password String 
+  role     Int
+  username String
+}
