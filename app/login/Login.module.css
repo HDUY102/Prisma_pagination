@@ -56,8 +56,14 @@
   width: 40%;
   font-size: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.changePage{
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 .closeLogin {
