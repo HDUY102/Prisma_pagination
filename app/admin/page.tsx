@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/app/admin/Admin.module.css";
-import Sidebar from "./Sidebar";
 import Card from "./Card";
 import Search from "./Search";
 import { useRouter } from "next/navigation";
