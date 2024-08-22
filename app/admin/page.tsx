@@ -1,18 +1,20 @@
-'use client'
-import React, { useEffect }  from "react";
+"use client";
+import React, { useEffect } from "react";
 import styles from "@/app/admin/Admin.module.css";
 import Sidebar from "./Sidebar";
 import Card from "./Card";
+import Search from "./Search";
 import { useRouter } from "next/navigation";
-import {jwtDecode} from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
+import AdminLayout from "./AdminLayout";
 
 interface MyTokenPayload {
-  role: number
+  role: number;
 }
 
 const AdminHome = () => {
-  const router = useRouter()
-  const token = localStorage.getItem("token")
+  const router = useRouter();
+  const token = localStorage.getItem("token");
   useEffect(() => {
     if (!token) {
       router.push("/login");
@@ -28,16 +30,12 @@ const AdminHome = () => {
     }
   }, [router, token]);
   return (
-    <div className={styles.container}>
-      <Sidebar />
-      <div className={styles.content}>
-        {/* <Search /> */}
-        <div className={styles.cards}>
-          <Card />
-        </div>
-        {/* <Chart /> */}
+    <AdminLayout>
+      <div>
+        <Search />
+        <Card />
       </div>
-    </div>
+    </AdminLayout>
   );
 };
 
